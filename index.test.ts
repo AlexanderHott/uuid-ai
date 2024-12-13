@@ -50,5 +50,6 @@ test('generates a uuid', async () => {
 test("uuid are different", async () => {
     const id1 = await uuidv4();
     const id2 = await uuidv4();
+
     expect(id1 === id2).toBe(false);
 });

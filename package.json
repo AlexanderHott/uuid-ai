@@ -1,12 +1,17 @@
 {
   "name": "uuid-ai",
-  "module": "index.ts",
-  "type": "module",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/bun": "latest",
+    "tsup": "^8.3.5",
     "vitest": "^2.1.8"
   },
   "peerDependencies": {
