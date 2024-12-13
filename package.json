@@ -2,8 +2,12 @@
   "name": "uuid-ai",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "vitest": "^2.1.8"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
